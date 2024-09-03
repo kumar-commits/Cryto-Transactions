@@ -76,7 +76,7 @@ Fetch Transactions
 - Response: List of transactions for the given address.
 
 Get User Expenses
-- GET /summary/:address
+- GET api/summary/:address
 - Request Body: { "address": "<Ethereum address>" }
 - Response: Total expenses and current Ethereum price.
 
