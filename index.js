@@ -1,7 +1,7 @@
 require('dotenv').config(); // Load environment variables from .env file
 const express = require('express');
 const connectDB = require('./config/connectDb'); // Import the connectDB function
-// index.js (continued)
+
 
 
 
@@ -18,8 +18,7 @@ app.get('/', (req, res) => {
   res.send('API is running...');
 });
 require('./scheduler/priceFetcher');
-// Define your routes here
-// Example: app.use('/api/transactions', require('./routes/transactionRoutes'));
+
 // Routes
 const transactionRoutes = require('./routes/transactionRoutes');
 const priceRoutes = require('./routes/priceRoutes');
