@@ -39,7 +39,7 @@ exports.fetchTransactions = async (req, res) => {
     await Transaction.insertMany(transactionsWithAddress, { ordered: false })
     .catch(err => {
         console.error('Error during transaction insertion:', err);
-        if (err.code !== 11000) { // Ignore duplicate key errors
+        if (err.code !== 11000) { 
           throw err;
         }
       });
